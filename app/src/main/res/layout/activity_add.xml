@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD2CF"
+    tools:context=".AddAct">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idEditTitle"
+        android:hint="Enter Title..."
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/black"
+        >
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idEditBtn"
+        android:layout_below="@id/idEditTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Description..."
+android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:id="@+id/idEditDesc"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textColorHint="@color/black"></EditText>
+
+    <Button
+        android:background="@drawable/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idEditBtn"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+
+
+
+
+
+        >
+
+    </Button>
+
+</RelativeLayout>

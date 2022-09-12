@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="4dp"
+    android:layout_margin="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTitle"
+        android:textColor="#1A3263"
+        android:textSize="18sp"
+        android:text="Note Title"
+        android:layout_margin="4dp"
+        android:layout_toLeftOf="@id/idDelete"
+        android:padding="4dp"
+        ></TextView>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/idTime"
+    android:text="Time"
+    android:textColor="@color/black"
+    android:layout_margin="4dp"
+    android:padding="4dp"
+    android:layout_toLeftOf="@id/idDelete"
+    android:layout_below="@id/idTitle"
+
+    ></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idDelete"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete_img"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            app:tint="#FF1E00"></ImageView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
